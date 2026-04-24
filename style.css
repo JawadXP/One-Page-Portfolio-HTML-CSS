@@ -1,0 +1,473 @@
+.container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e0;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    background-color: white;
+    justify-content: flex-end;
+
+
+}
+
+ul li a {
+    font-size: 16px;
+    font-family: "Instrument Serif", "serif";
+    display: block;
+    color: #7a7971;
+    padding: 14px 16px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+
+
+}
+
+ul li a:hover {
+    color: black;
+}
+
+#nav-name {
+    font-family: "Instrument Serif", "serif";
+    font-size: 25px;
+    color: black;
+    padding-left: 30px;
+    letter-spacing: 0.01em;
+    font-weight: 100;
+}
+
+#hero {
+    margin-top: 100px;
+    padding-left: 30px;
+
+}
+
+.span1 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #c8622a;
+}
+
+.para1 {
+    font-family: "Instrument Serif", "serif";
+    font-size: 80px;
+    color: black;
+    margin-top: 30px;
+}
+
+em {
+    color: orange;
+}
+
+.para2 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 22px;
+    color: grey;
+}
+
+button.view {
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    font-size: 20px;
+    border-radius: 30px;
+    padding-left: 40px;
+    margin-top: 30px;
+
+}
+
+button.let {
+    background-color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 15px 27px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+button.view:hover {
+    background-color: black;
+    color: white;
+
+}
+
+
+ul.skills {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#about {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.span2 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #c8622a;
+
+}
+
+h3 {
+    font-family: "Instrument Serif", "serif";
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.para3 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 22px;
+    color: grey;
+}
+
+.para4 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 22px;
+    color: grey;
+}
+
+.para5 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 22px;
+    color: grey;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+}
+
+.subject {
+    display: flex;
+    font-family: "DM Sans", "sans-serif";
+    font-size: 19px;
+    flex-direction: column;
+    list-style: disc;
+    color: #1A1A18;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+li::marker {
+    color: orange;
+}
+
+.para3 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 22px;
+    gap: 44px;
+}
+
+#work {
+    background-color: #F2F0EB;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    margin-bottom: 100px;
+}
+
+.span3 {
+    margin-top: 100px;
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #c8622a;
+    ;
+}
+
+.para-1 {
+    font-family: "instrument serif", "serif";
+    font-size: 30px;
+    color: black;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 25px;
+}
+
+.product {
+    background-color: whitesmoke;
+    color: grey;
+    border-radius: 15px;
+    padding: 40px 30px;
+    align-items: center;
+    justify-content: center;
+    border-collapse: separate;
+}
+
+.design {
+    background-color: whitesmoke;
+    color: grey;
+    border-radius: 15px;
+    padding: 40px 30px;
+    align-items: center;
+    justify-content: center;
+    border-collapse: separate;
+}
+
+.webdev {
+    background-color: whitesmoke;
+    color: grey;
+    border-radius: 15px;
+    padding: 40px 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lunesleep {
+    background-color: whitesmoke;
+    color: grey;
+    border-radius: 15px;
+    padding: 40px 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#experience {
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-bottom: 80px;
+}
+
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.section-heading .span4 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #c8622a;
+    letter-spacing: 0.2em;
+}
+
+.para-2 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 22px;
+    color: #1a1a18;
+    margin: 0;
+}
+
+#pro {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #c8622a;
+}
+
+#des {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #c8622a;
+}
+
+#web {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #c8622a;
+}
+
+#mob {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #c8622a;
+}
+
+#emb {
+    font-family: "Instrument serif", "serif";
+    font-size: 18px;
+    color: #1A1A18;
+}
+
+#bas {
+    font-family: "Instrument serif", "serif";
+    font-size: 18px;
+    color: #1A1A18;
+}
+
+#fol {
+    font-family: "Instrument serif", "serif";
+    font-size: 18px;
+    color: #1A1A18;
+}
+
+#lun {
+    font-family: "Instrument serif", "serif";
+    font-size: 18px;
+    color: #1A1A18;
+}
+
+.experience-container {
+    display: grid;
+    gap: 40px;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 30px;
+    align-items: start;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e5e2dc;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.experience-item span {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #8a8a84;
+    line-height: 1.4;
+}
+
+.experience-item h2 {
+    font-family: "Instrument Serif", "serif";
+    font-size: 30px;
+    color: #181614;
+    margin: 0;
+    line-height: 1.1;
+    
+    
+    }
+
+.experience-item h4 {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 16px;
+    color: #c8622a;
+    margin: 12px 0 18px;
+    font-weight: 400;
+
+    
+}
+
+.experience-item p {
+    font-family: "DM Sans", "sans-serif";
+    font-size: 19px;
+    color: #6e6b63;
+    margin: 0;
+    line-height: 1.8;
+    max-width: 720px;
+}
+
+#contact{
+    background-color: black;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    
+}
+.span-1{
+    font-family: "DM Sans", "sans-serif";
+    font-size: 15px;
+    color: #c8622a;
+    margin-top: 100px;
+}
+.work{
+    font-family: "Instrument Serif", "serif";
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    }
+    .paradesign{
+        font-family:"DM Sans", "sans-serif";
+            color: #9a9890;
+        font-size: 16px;
+    }
+    .buttons{
+        margin-top: 10px;
+    }
+.btn1{
+     background-color:orange;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    font-size: 20px;
+    border-radius: 40px;
+    padding-left: 40px;
+    margin-top: 30px;
+}
+.btn2{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 40px;
+    border-color: #8a8a84;
+    padding:15px 20px;
+    margin-left: 20px;
+}
+.btn3{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 40px;
+    border-color: #8a8a84;
+    padding:15px 20px;
+    margin-left: 20px;
+}
+.btn4{
+   background-color: black;
+   border-color: #8a8a84;
+    color: white;
+    font-size: 15px;
+    border-radius: 40px;
+    padding:15px 20px;
+    margin-left: 20px; 
+}
+.btn1:hover{
+color: grey;
+}
+.btn2:hover{
+    color: grey;
+}
+.btn3:hover{
+    color: grey;
+}
+.btn4:hover{
+    color: grey;
+}
+
+
+.end-line{
+    border-top: 1px solid #a5a59e;
+    display:flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 100px;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
