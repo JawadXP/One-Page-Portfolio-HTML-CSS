@@ -10,7 +10,11 @@
     backdrop-filter: blur(10px);
 }
 
-ul {
+.container a {
+    text-decoration: none;
+}
+
+.navbar ul {
     display: flex;
     list-style-type: none;
     margin-top: 10px;
@@ -21,7 +25,7 @@ ul {
 
 }
 
-ul li a {
+.navbar ul li a {
     font-size: 16px;
     font-family: "Instrument Serif", "serif";
     display: block;
@@ -32,11 +36,9 @@ ul li a {
     text-decoration: none;
     letter-spacing: 0.08em;
     font-weight: 400;
-
-
 }
 
-ul li a:hover {
+.navbar ul li a:hover {
     color: black;
 }
 
@@ -48,6 +50,7 @@ ul li a:hover {
     letter-spacing: 0.01em;
     font-weight: 100;
 }
+
 
 #hero {
     margin-top: 100px;
@@ -104,7 +107,6 @@ button.view:hover {
     color: white;
 
 }
-
 
 ul.skills {
     list-style-type: none;
@@ -356,9 +358,9 @@ li::marker {
     color: #181614;
     margin: 0;
     line-height: 1.1;
-    
-    
-    }
+
+
+}
 
 .experience-item h4 {
     font-family: "DM Sans", "sans-serif";
@@ -367,7 +369,7 @@ li::marker {
     margin: 12px 0 18px;
     font-weight: 400;
 
-    
+
 }
 
 .experience-item p {
@@ -379,95 +381,635 @@ li::marker {
     max-width: 720px;
 }
 
-#contact{
+#contact {
     background-color: black;
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
-    
+
 }
-.span-1{
+
+.span-1 {
     font-family: "DM Sans", "sans-serif";
     font-size: 15px;
     color: #c8622a;
     margin-top: 100px;
 }
-.work{
+
+.work {
     font-family: "Instrument Serif", "serif";
     font-size: 20px;
     color: white;
     margin-top: 20px;
-    }
-    .paradesign{
-        font-family:"DM Sans", "sans-serif";
-            color: #9a9890;
-        font-size: 16px;
-    }
-    .buttons{
-        margin-top: 10px;
-    }
-.btn1{
-     background-color:orange;
-    color: white;
-    padding: 20px 30px;
-    border: none;
-    font-size: 20px;
-    border-radius: 40px;
-    padding-left: 40px;
-    margin-top: 30px;
 }
-.btn2{
-    background-color: black;
+
+.paradesign {
+    font-family: "DM Sans", "sans-serif";
+    color: #9a9890;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.buttons button {
+    font-family: "DM Sans", "sans-serif";
+    border-radius: 999px;
+    min-height: 58px;
+    padding: 0 28px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn1 {
+    background-color: #f6a300;
     color: white;
-    font-size: 15px;
-    border-radius: 40px;
+    border: 1px solid #f6a300;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn2 {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #4d4d49;
+}
+
+.btn3 {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #4d4d49;
+}
+
+.btn4 {
+    background-color: transparent;
+    border: 1px solid #4d4d49;
+    color: white;
+    font-size: 16px;
+}
+
+.btn1:hover {
+    background-color: #ffb424;
+    border-color: #ffb424;
+    color: #0f0f0f;
+}
+
+.btn2:hover {
+    background-color: #1a1a1a;
     border-color: #8a8a84;
-    padding:15px 20px;
-    margin-left: 20px;
+    color: #ffffff;
 }
-.btn3{
-    background-color: black;
-    color: white;
-    font-size: 15px;
-    border-radius: 40px;
+
+.btn3:hover {
+    background-color: #1a1a1a;
     border-color: #8a8a84;
-    padding:15px 20px;
-    margin-left: 20px;
+    color: #ffffff;
 }
-.btn4{
-   background-color: black;
-   border-color: #8a8a84;
-    color: white;
-    font-size: 15px;
-    border-radius: 40px;
-    padding:15px 20px;
-    margin-left: 20px; 
-}
-.btn1:hover{
-color: grey;
-}
-.btn2:hover{
-    color: grey;
-}
-.btn3:hover{
-    color: grey;
-}
-.btn4:hover{
-    color: grey;
+
+.btn4:hover {
+    background-color: #1a1a1a;
+    border-color: #8a8a84;
+    color: #ffffff;
 }
 
 
-.end-line{
+.end-line {
     border-top: 1px solid #a5a59e;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     color: white;
     margin-top: 100px;
     flex-direction: row;
     padding-top: 10px;
 }
+@media screen and (max-width: 1024px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
+    #nav-name {
+        padding-left: 0;
+    }
+
+    .navbar ul li a {
+        margin-right: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar ul {
+        margin-top: 0;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+        background-color: transparent;
+    }
+
+    .navbar ul li a {
+        margin-right: 0;
+        padding: 8px 12px;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    #nav-name {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        gap: 6px;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #work {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #work .work-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    #work .product,
+    #work .design,
+    #work .webdev,
+    #work .lunesleep {
+        padding: 32px 24px;
+    }
+
+    #work .para-1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #work {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #work .span3 {
+        margin-top: 64px;
+    }
+
+    #work .para-1 {
+        font-size: 24px;
+    }
+
+    #work .work-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 0 0 24px;
+    }
+
+    #work p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #work p br {
+        display: none;
+    }
+
+    #contact {
+        margin-top: 80px;
+        padding: 24px 20px;
+    }
+
+    #contact .span-1 {
+        margin-top: 40px;
+    }
+
+    #contact .work {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    #contact .paradesign {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #contact .paradesign br {
+        display: none;
+    }
+
+    #contact .btn1 {
+        padding: 16px 24px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #contact .btn2,
+    #contact .btn3,
+    #contact .btn4 {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
+    #contact .end-line {
+        margin-top: 48px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #work .span3 {
+        font-size: 13px;
+    }
+
+    #work .para-1 {
+        font-size: 22px;
+    }
+
+    #work .product,
+    #work .design,
+    #work .webdev,
+    #work .lunesleep {
+        padding: 24px 18px;
+        border-radius: 12px;
+    }
+
+    #work h4 {
+        font-size: 17px;
+    }
+
+    #contact {
+        padding: 22px 16px;
+    }
+
+    #contact .span-1 {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    #contact .work {
+        font-size: 28px;
+    }
+
+    #contact .paradesign {
+        font-size: 14px;
+    }
+
+    #contact .buttons {
+        gap: 10px;
+    }
+
+    #contact .btn1,
+    #contact .btn2,
+    #contact .btn3,
+    #contact .btn4 {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #contact .btn1 {
+        padding-left: 24px;
+    }
+
+    #contact .end-line {
+        margin-top: 36px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #about {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #about .about-container {
+        gap: 72px;
+    }
+
+    #about .para3 {
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    #about .subject {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        margin-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #about h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    #about .about-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #about .para3 {
+        font-size: 18px;
+        line-height: 1.65;
+    }
+
+    #about .para3 br {
+        display: none;
+    }
+
+    #about .subject {
+        margin-top: 0;
+        font-size: 17px;
+        gap: 10px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about {
+        margin-top: 70px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    #about .span2 {
+        font-size: 13px;
+    }
+
+    #about h3 {
+        font-size: 23px;
+        margin-top: 14px;
+        margin-bottom: 16px;
+    }
+
+    #about .para3 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #about .subject {
+        font-size: 16px;
+        gap: 8px;
+        padding-left: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #hero .para1 {
+        font-size: 64px;
+        line-height: 1.08;
+    }
+
+    #hero .para2 {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    #hero .cta-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    #hero button.let {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        margin-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #hero .span1 {
+        font-size: 14px;
+    }
+
+    #hero .para1 {
+        margin-top: 20px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    #hero .para2 {
+        font-size: 18px;
+    }
+
+    #hero .para2 br {
+        display: none;
+    }
+
+    #hero button.view,
+    #hero button.let {
+        font-size: 17px;
+        padding: 14px 22px;
+        border-radius: 28px;
+    }
+
+    #hero button.view {
+        margin-top: 18px;
+        padding-left: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hero {
+        margin-top: 70px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    #hero .span1 {
+        font-size: 12px;
+    }
+
+    #hero .para1 {
+        font-size: 36px;
+        line-height: 1.12;
+    }
+
+    #hero .para1 br {
+        display: none;
+    }
+
+    #hero .para2 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #hero .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    #hero button.view,
+    #hero button.let {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #experience {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #experience .experience-item {
+        grid-template-columns: 150px 1fr;
+        gap: 24px;
+    }
+
+    #experience .experience-item h2 {
+        font-size: 28px;
+    }
+
+    #experience .experience-item p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #experience {
+        margin-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 64px;
+    }
+
+    #experience .section-heading {
+        margin-bottom: 28px;
+    }
+
+    #experience .para-2 {
+        font-size: 20px;
+    }
+
+    #experience .experience-container {
+        gap: 28px;
+    }
+
+    #experience .experience-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-bottom: 28px;
+    }
+
+    #experience .experience-item h2 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    #experience .experience-item h4 {
+        margin: 8px 0 14px;
+    }
+
+    #experience .experience-item p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #experience {
+        margin-top: 70px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 56px;
+    }
+
+    #experience .span4 {
+        font-size: 13px;
+    }
+
+    #experience .para-2 {
+        font-size: 18px;
+    }
+
+    #experience .experience-item {
+        padding-bottom: 24px;
+        gap: 8px;
+    }
+
+    #experience .experience-item span {
+        font-size: 13px;
+    }
+
+    #experience .experience-item h2 {
+        font-size: 21px;
+    }
+
+    #experience .experience-item h4 {
+        font-size: 14px;
+        margin: 6px 0 12px;
+    }
+
+    #experience .experience-item p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+}
